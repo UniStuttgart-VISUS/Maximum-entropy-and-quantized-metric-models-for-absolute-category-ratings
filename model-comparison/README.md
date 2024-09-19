@@ -28,10 +28,10 @@ The plot for the logit-logistic model appears to have the lowest G-test values f
 
 | ![L1-distances of ACR outputs](figures/matrix_l1dist.svg) |
 | --- |
-| *Figure 3* - Pairwise comparison of the models ACR probability vector output. The L1-distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. | 
+| *Figure 3* - Pairwise comparison of the models ACR probability vector output. The L1-distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. On the diagonal of the matrix plot the model is indicated that is compared in the corresponding row and column. Plots below the diagonal are redundant due to symmetry. | 
 
 more text
 
 | ![Aitchison distances of ACR outputs](figures/matrix_aitchison.svg) |
 | --- |
-| *Figure 4* - Pairwise comparison of the models ACR probability vector output. The Aitchison distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. |
+| *Figure 4* - Pairwise comparison of the models ACR probability vector output. The Aitchison distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. On the diagonal of the matrix plot the model is indicated that is compared in the corresponding row and column. Plots below the diagonal are redundant due to symmetry. |
