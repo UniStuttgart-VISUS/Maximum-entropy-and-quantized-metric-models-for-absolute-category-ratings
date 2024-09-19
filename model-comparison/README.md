@@ -10,11 +10,19 @@ We use the *VQEG* and *KonIQ-10k* dataset to create a scatter plot of the stimul
 | --- |
 | *Figure 1* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *VQEG* data set and corresponding G-test value as color. |
 
-more text
+In Figure 1 it can be seen that all models expose a similar pattern where the stimuli on the sides, i.e., those with little or high mean opinion score and smaller possible variance, have small G-test values (blue color) and are better fitted by the models.
+Stimuli located more towards the center tend to be fitted worse by the models.
+For this dataset (*VQEG*), all models look equally valid.
 
 | ![G-test results on KONIQ dataset](figures/row_gtest-koniq.svg) |
 | --- |
 | *Figure 2* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *KonIQ-10k* data set and corresponding G-test value as color. |
+
+In Figure 2 the same kind of visualization is used, but with the *KonIQ-10k* dataset which contains a considerably larger number of stimuli.
+Here, the models show clearly different patterns.
+For example, the GSD model has high G-tests values for stimuli close to $\Psi=3$, whereas other models, like normal, beta, and maxentropy, show high G-test values for stimuli between $\Psi=3$ and $\Psi=4$.
+The plot for the logit-logistic model appears to have the lowest G-test values for this data set, which resonates with our findings reported in the main document. 
+
 
 ## Comparison of ACR Output
 
