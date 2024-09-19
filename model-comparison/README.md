@@ -2,7 +2,7 @@
 In the main document an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG* and *KonIQ-10k* dataset.
 Here, we provide a visual comparison of the models and give more details on their individual performance.
 
-## Comparison with Data Sets
+## Comparison of G-Test Results with Data Sets
 To get a more detailed impression of the models performances, we have a look at the plane of $\Psi$ (*mean opinion score*) and $v$  (*variance*).
 We use the *VQEG* and *KonIQ-10k* dataset to create a scatter plot of the stimuli's $\Psi$ and $v$ and color code them by their G-test value of the respective model.
 
@@ -24,10 +24,14 @@ For example, the GSD model has high G-tests values for stimuli close to $\Psi=3$
 The plot for the logit-logistic model appears to have the lowest G-test values for this data set, which resonates with our findings reported in the main document. 
 
 
-## Comparison of ACR Output
+## Comparison of ACR Probability Vector Outputs
 
-![L1-distances of ACR outputs](figures/matrix_l1dist.svg)
+| ![L1-distances of ACR outputs](figures/matrix_l1dist.svg) |
+| --- |
+| *Figure 3* - Pairwise comparison of the models ACR probability vector output. The L1-distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. | 
 
-and even more
+more text
 
-![Aitchison distances of ACR outputs](figures/matrix_aitchison.svg)
+| ![Aitchison distances of ACR outputs](figures/matrix_aitchison.svg) |
+| --- |
+| *Figure 4* - Pairwise comparison of the models ACR probability vector output. The Aitchison distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. |
