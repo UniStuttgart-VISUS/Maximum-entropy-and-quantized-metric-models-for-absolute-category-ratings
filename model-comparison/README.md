@@ -1,5 +1,6 @@
 # Model Comparison
-add text here
+In the main document an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG* and *KonIQ-10k* dataset.
+Here, we provide a visual comparison of the models and give more details on how they compare to each other.
 
 ## Comparison with Data Sets
 ![G-test results on VQEG dataset](figures/row_gtest-vqeg.svg)
