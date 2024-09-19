@@ -1,6 +1,6 @@
 # Model Comparison
 In the main document an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG* and *KonIQ-10k* dataset.
-Here, we provide a visual comparison of the models and give more details on how they compare to each other.
+Here, we provide a visual comparison of the models and give more details on their individual performance.
 
 ## Comparison with Data Sets
 To get a more detailed impression of the models performances, we have a look at the plane of $\Psi$ (*mean opinion score*) and $v$  (*variance*).
