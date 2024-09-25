@@ -1,8 +1,8 @@
-# Model Comparison
+## Model Comparison
 In the main document, an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG HDTV* and *KonIQ-10k* datasets.
 Here, we provide a visual comparison of the models and give more details on their individual performance.
 
-## Comparison of G-Test Results with Datasets
+### Comparison of G-Test Results with Datasets
 To get a more detailed impression of the models' performances, we have a look at the plane of $\Psi$ (*mean opinion score*) and $v$  (*variance*).
 We use the *VQEG HDTV* and *KonIQ-10k* datasets to create a scatter plot of the stimuli's $\Psi$ and $v$ and color code them by their G-test value of the respective model.
 
@@ -25,7 +25,7 @@ For example, the GSD model has high G-tests values for stimuli close to $\Psi=3$
 The plot for the logit-logistic model has the lowest G-test values for this dataset, which resonates with our findings reported in the main document. 
 
 
-## Comparison of ACR Probability Vector Outputs
+### Comparison of ACR Probability Vector Outputs
 While the above plots showed the models' performance on two different datasets, we also want to give some details on the general similarity of the model outputs.
 Therefore, we have a look at the ACR probability vectors generated for different inputs of $\Psi$ and $v$.
 To compare the models to each other, we compute the difference of the output vectors of all model pairings.
