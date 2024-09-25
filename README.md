@@ -6,7 +6,7 @@ Dietmar Saupe, Krzysztof Rusek, David Hägele, Daniel Weiskopf, Lucjan Janowski
 In this supplemental material we provide more details on the models that we evaluated in the main document as well as the source code used to compute the models.
 
 ## Model Comparison
-In the main document, an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG HDTV* and *KonIQ-10k* datasets.
+In the main document, an evaluation of the different models is given where their goodness of fit is determined and prediction accuracy is measured with respect to the *VQEG HDTV* and *KonIQ-10k* datasets.
 Here, we provide a visual comparison of the models and give more details on their individual performance.
 
 ### Comparison of G-Test Results with Datasets
