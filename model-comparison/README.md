@@ -1,18 +1,19 @@
 # Model Comparison
-In the main document, an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG* and *KonIQ-10k* datasets.
+In the main document, an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG HDTV* and *KonIQ-10k* datasets.
 Here, we provide a visual comparison of the models and give more details on their individual performance.
 
 ## Comparison of G-Test Results with Datasets
 To get a more detailed impression of the models' performances, we have a look at the plane of $\Psi$ (*mean opinion score*) and $v$  (*variance*).
-We use the *VQEG* and *KonIQ-10k* datasets to create a scatter plot of the stimuli's $\Psi$ and $v$ and color code them by their G-test value of the respective model.
+We use the *VQEG HDTV* and *KonIQ-10k* datasets to create a scatter plot of the stimuli's $\Psi$ and $v$ and color code them by their G-test value of the respective model.
 
 | ![G-test results on VQEG dataset](figures/row_gtest-vqeg.svg) |
 | --- |
-| *Figure 1* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *VQEG* dataset. The corresponding G-test values are visualized by color. |
+| *Figure 1* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *VQEG HDTV* dataset. The corresponding G-test values are visualized by color. |
 
-In Figure 1, it can be seen that all models expose similar patterns. The points on the sides of the plots, i.e., those corresponding to stimuli with little or high mean opinion score and smaller possible variance, have small G-test values (blue color) and are better fitted by the models.
+In Figure 1, it can be seen that all models expose similar patterns. 
+The points on the sides of the plots, i.e., those corresponding to stimuli with little or high mean opinion score and smaller possible variance, have small G-test values (blue color) and are better fitted by the models.
 Stimuli located more toward the center tend to be fitted worse by the models.
-For this dataset (*VQEG*), all models look equally valid.
+For this dataset (*VQEG HDTV*), all models look equally valid.
 
 | ![G-test results on KONIQ dataset](figures/row_gtest-koniq.svg) |
 | --- |
