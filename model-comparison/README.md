@@ -1,52 +1,52 @@
 # Model Comparison
-In the main document an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG* and *KonIQ-10k* dataset.
+In the main document, an evaluation of the different models is given where their goodness of fit is determined and predction accuracy is measured with respect to the *VQEG* and *KonIQ-10k* datasets.
 Here, we provide a visual comparison of the models and give more details on their individual performance.
 
-## Comparison of G-Test Results with Data Sets
-To get a more detailed impression of the models performances, we have a look at the plane of $\Psi$ (*mean opinion score*) and $v$  (*variance*).
-We use the *VQEG* and *KonIQ-10k* dataset to create a scatter plot of the stimuli's $\Psi$ and $v$ and color code them by their G-test value of the respective model.
+## Comparison of G-Test Results with Datasets
+To get a more detailed impression of the models' performances, we have a look at the plane of $\Psi$ (*mean opinion score*) and $v$  (*variance*).
+We use the *VQEG* and *KonIQ-10k* datasets to create a scatter plot of the stimuli's $\Psi$ and $v$ and color code them by their G-test value of the respective model.
 
 | ![G-test results on VQEG dataset](figures/row_gtest-vqeg.svg) |
 | --- |
-| *Figure 1* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *VQEG* data set and corresponding G-test value as color. |
+| *Figure 1* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *VQEG* dataset. The corresponding G-test values are visualized by color. |
 
-In Figure 1 it can be seen that all models expose a similar pattern where the stimuli on the sides, i.e., those with little or high mean opinion score and smaller possible variance, have small G-test values (blue color) and are better fitted by the models.
-Stimuli located more towards the center tend to be fitted worse by the models.
+In Figure 1, it can be seen that all models expose similar patterns. The points on the sides of the plots, i.e., those corresponding to stimuli with little or high mean opinion score and smaller possible variance, have small G-test values (blue color) and are better fitted by the models.
+Stimuli located more toward the center tend to be fitted worse by the models.
 For this dataset (*VQEG*), all models look equally valid.
 
 | ![G-test results on KONIQ dataset](figures/row_gtest-koniq.svg) |
 | --- |
-| *Figure 2* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *KonIQ-10k* data set and corresponding G-test value as color. |
+| *Figure 2* - Scatterplots for the different models showing $\Psi$ and $v$ of the stimuli of the *KonIQ-10k* dataset. The corresponding G-test values are visualized by color. |
 
-In Figure 2 the same kind of visualization is used, but with the *KonIQ-10k* dataset which contains a considerably larger number of stimuli.
+In Figure 2, the same kind of visualization is used, but with the *KonIQ-10k* dataset, which contains a considerably larger number of stimuli.
 Here, the models show clearly different patterns.
 For example, the GSD model has high G-tests values for stimuli close to $\Psi=3$, whereas other models, like normal, beta, and maxentropy, show high G-test values for stimuli between $\Psi=3$ and $\Psi=4$.
-The plot for the logit-logistic model appears to have the lowest G-test values for this data set, which resonates with our findings reported in the main document. 
+The plot for the logit-logistic model has the lowest G-test values for this dataset, which resonates with our findings reported in the main document. 
 
 
 ## Comparison of ACR Probability Vector Outputs
-While the above plots showed the models performance on two different data sets, we also want to give some details on the general similarity of the model outputs.
-Therefore, we have a look at the ACR probability vectors that are generated for different inputs of $\Psi$ and $v$.
+While the above plots showed the models' performance on two different datasets, we also want to give some details on the general similarity of the model outputs.
+Therefore, we have a look at the ACR probability vectors generated for different inputs of $\Psi$ and $v$.
 To compare the models to each other, we compute the difference of the output vectors of all model pairings.
 The resulting pairwise distance fields are then shown in a plot matrix. 
 
 | ![L1-distances of ACR outputs](figures/matrix_l1dist.svg) |
 | --- |
-| *Figure 3* - Pairwise comparison of the models ACR probability vector output. The L1-distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. On the diagonal of the matrix plot the model is indicated that is compared in the corresponding row and column. Plots below the diagonal are redundant due to symmetry. | 
+| *Figure 3* - Pairwise comparison of the models ACR probability vector output. The L1-distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color-coded. Bright colors indicate areas where the models output differs strongly. On the diagonal of the matrix plot, the model is indicated that is compared in the corresponding row and column. Plots below the diagonal are redundant due to symmetry. | 
 
 In Figure 3 the L1-distance metric was used.
-The largest distances can be observed in pairs with GSD, and that the models disagree with GSD the most in the center area.
-The most similar vector output (w.r.t the L1-distance) is generated by the normal and maxentropy model, as indicated by the large dark areas.
+The largest distances can be observed in pairs with GSD, and that the models disagree with GSD most in the center area.
+The most similar vector output (w.r.t the L1-distance) is generated by the normal and maxentropy models, as indicated by the large dark areas.
 The logit-logistic model and the maxentropy model show low differences in the middle area around $\Psi=3$, whereas other pairings tend to have larger distances in that location.
 
 | ![Aitchison distances of ACR outputs](figures/matrix_aitchison.svg) |
 | --- |
-| *Figure 4* - Pairwise comparison of the models ACR probability vector output. The Aitchison distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color coded. Bright colors indicate areas where the models output differs more strongly. On the diagonal of the matrix plot the model is indicated that is compared in the corresponding row and column. Plots below the diagonal are redundant due to symmetry. |
+| *Figure 4* - Pairwise comparison of the models ACR probability vector output. The Aitchison distance of the output vectors between two models for inputs from the $\Psi$ - $v$ - plane is color-coded. Bright colors indicate areas where the models output differs strongly. On the diagonal of the matrix plot, the model is indicated that is compared in the corresponding row and column. Plots below the diagonal are redundant due to symmetry. |
 
-Since the ACR probability vectors are compositions, i.e. their values are non-negative and sum up to $1$, we used the Aitchison distance as a second metric, which is intended for composional data analysis and captures the differences of the probability ratios.
+Since the ACR probability vectors are compositions, i.e., their values are non-negative and sum up to $1$, we used the Aitchison distance as a second metric, that is intended for composional data analysis and captures the differences of the probability ratios.
 This metric is shown in Figure 4 and gives patterns that differ from those visible with the L1-distance.
 What is expecially noticable is that the largest differences can be observed in regions with little varaince close to $\Psi=2$ and $\Psi=4$.
-The interpretation of this is that the ratios of the probability vectors differ more strongly there, however, the differening entries must be small due to the little variance and the difference stems from the order of magnitude of the small entries (e.g. probability of $10^{-5}$ vs $10^{-8}$), which may be neglectable in practice.
+The interpretation of this is that the ratios of the probability vectors differ more strongly there, however, the differening entries must be small due to the little variance, and the difference stems from the order of magnitude of the small entries (e.g. probability of $10^{-5}$ vs. $10^{-8}$), which may be neglectable in practice.
 The most similar models in this comparison are normal and beta, as well as logistic and logit-logistic.
 
 
