@@ -29,7 +29,7 @@
 % OF THIS SOFTWARE.
 % 
 % The program reads either one of the two datasets KonIQ-10k or VQEG-HDTV and 
-% then computes the maximum entropy and quantized metric models for all the teh 
+% then computes the maximum entropy and quantized metric models for all the 
 % ACR distributions in the datasets. This reproduces (among other things) the 
 % values in the columns for AIC and G-test in Tables I and II.
 
