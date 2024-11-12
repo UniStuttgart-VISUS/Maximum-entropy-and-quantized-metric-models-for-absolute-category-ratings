@@ -5,6 +5,15 @@ Dietmar Saupe, Krzysztof Rusek, David Hägele, Daniel Weiskopf, Lucjan Janowski
 
 In this supplemental material we provide more details on the models that we evaluated in the main document as well as the source code used to compute the models.
 
+## Files and references that should be cited for their usage
+ACR_Modeling.m Matlab code. Please cite paper Saupe, D., Rusek, K., Hägele, D., Weiskopf, D., & Janowski, L., Maximum entropy and quantized metric models for absolute category ratings, IEEE Signal Processing Letters 31 (2024) p. 2970-2974.
+KonIQ-10k.csv Dataset. Please cite paper Hosu, V., Lin, H., Sziranyi, T., & Saupe, D., KonIQ-10k: An ecologically valid database for deep learning of blind image quality assessment, IEEE Transactions on Image Processing 29 (2020) p. 4041-4056.
+VQEG-HDTV.csv Dataset. Please cite Video Quality Experts Group, Report on the validation of video quality models for high definition video content, https://vqeg.org/projects/hdtv/.
+gsd_prob_vectors.csv. Please cite Nawała, J., Janowski, L., Ćmiel, B., Rusek, K., & Pérez, P., Generalized score distribution: A two-parameter discrete distribution accurately describing responses from quality of experience subjective experiments, IEEE Transactions on Multimedia 25 (2022) p. 6090-6104.
+
+## Code
+The code is given in the form of a single Matlab file ACR_Modeling.m. The program reads either one of the two datasets KonIQ-10k or VQEG-HDTV and then computes the maximum entropy and quantized metric models for all the ACR distributions in the datasets. This reproduces (among other things) the values in the columns for AIC and G-test in Tables I and II of the paper. The user can selects the dataset (KonIQ-10k or VQEG-HDTV) in the code and also which one of the distribution types shall be taken into account. The program produces as output a protocol that lists the progress of the processing, and at the end produces a figure and an output Excel file. The file contains for each stimulus in the dataset the stimulus-id, the ACR ratings, the model name, the model parameter values, the model probabilities for the 5 quality categories, the negative log likelihood, the gtest value, and the p-value correspondimng to the g-test, based on the chisquare distribution.
+
 ## Model Comparison
 In the main document, an evaluation of the different models is given where their goodness of fit is determined and prediction accuracy is measured with respect to the *VQEG HDTV* and *KonIQ-10k* datasets.
 Here, we provide a visual comparison of the models and give more details on their individual performance.
