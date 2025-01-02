@@ -1,4 +1,4 @@
-# Supplemental material for the paper "Maximum entropy and quantized metric models for absolute category ratings"
+# Supplemental material for the paper ["Maximum entropy and quantized metric models for absolute category ratings"](https://doi.org/10.1109/LSP.2024.3480832)
 Dietmar Saupe, Krzysztof Rusek, David Hägele, Daniel Weiskopf, Lucjan Janowski
 
 ---
